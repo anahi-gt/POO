@@ -32,17 +32,18 @@ def mostrar_menu():
 
     unidades = {
         '1': 'Unidad 1',
-        '2': 'Unidad 2'
+        '2': 'Unidad 2',
+        '3': 'Mis Notas Personales'
     }
 
     while True:
-        print("\nMenu Principal - Dashboard")
+        print("\n=== Gestor de Proyectos POO - Anahi ===")
         # Imprime las opciones del menú principal
         for key in unidades:
             print(f"{key} - {unidades[key]}")
         print("0 - Salir")
 
-        eleccion_unidad = input("Elige una unidad o '0' para salir: ")
+        eleccion_unidad = input("Anahí, selecciona la unidad que quieres revisar (o '0' para finalizar): ")
         if eleccion_unidad == '0':
             print("Saliendo del programa.")
             break
@@ -97,7 +98,7 @@ def mostrar_scripts(ruta_sub_carpeta):
                     ruta_script = os.path.join(ruta_sub_carpeta, scripts[eleccion_script])
                     codigo = mostrar_codigo(ruta_script)
                     if codigo:
-                        ejecutar = input("¿Desea ejecutar el script? (1: Sí, 0: No): ")
+                        ejecutar = input("¿Quieres probar este programa ahora mismo? (1: Sí / 0: No): ")
                         if ejecutar == '1':
                             ejecutar_codigo(ruta_script)
                         elif ejecutar == '0':
