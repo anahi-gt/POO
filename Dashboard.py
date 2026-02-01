@@ -115,3 +115,10 @@ def mostrar_scripts(ruta_sub_carpeta):
 if __name__ == "__main__":
     mostrar_menu()
 
+# --- NOTAS DE LA ESTUDIANTE (ANAHÍ) ---
+# Cambios realizados el 31/01/2026:
+# 1. Se personalizó el título del menú principal con mi nombre: "Gestor de Proyectos POO - Anahi".
+# 2. Se añadió una nueva opción al diccionario 'unidades': '3': 'Mis Notas Personales'.
+# 3. Se creó físicamente la carpeta 'Mis Notas Personales' con subcarpetas para organizar mis apuntes.
+# 4. Se ajustó el input del menú para que me salude: "Anahí, selecciona la unidad...".
+# 5. Se verificó que el sistema de rutas funcione correctamente con la nueva estructura de carpetas.
